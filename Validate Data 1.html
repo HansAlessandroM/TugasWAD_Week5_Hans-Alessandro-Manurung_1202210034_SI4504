@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HansNiBoss!</title>
+    </head>
+    <body>
+        <h1>JavaScript Can Validate Input</h1>
+        <p>Masukkan angka diantara 1 and 10:</p>
+        <input id="numb" type="number">
+        <button type="button" onclick="myFunction()">Teken Ini</button>
+        <p id="demo"></p>
+    <script>
+        function myFunction() {
+            var x, text;
+
+            //input file dgn id="numb"
+            x = document.getElementById("numb").value;
+
+            //jika kurang dari 1 atau lebih besar dari 10
+            if (isNan(x) || x < 1 || x > 10) {
+                text = "inputan tidak valid";
+            } else {
+                text = "inputan valid";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+</body>
+</html>

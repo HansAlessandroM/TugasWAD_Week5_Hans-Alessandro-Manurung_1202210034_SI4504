@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ini PDI</title>
+    </head>
+    <body>
+        <h1>JavaScript Can Change Images</h1>
+        <img id="myImage" onclick="changeImage()" src="C:\Users\Hanz\Downloads\megawati-pdi.png" width="350" height="180">
+        <p>Coba Klik Fotonya, ada Ganjar loch!</p>
+        <script>
+            function changeImage() {
+                var image = document.getElementById('myImage');
+                if (image.src.match("bulbon")) {
+                    image.src = "C:\Users\Hanz\Downloads\pdi ganjar.jpg";
+                }else {
+                    image.src = "C:\Users\Hanz\Downloads\pdi ganjar.jpg";
+                }
+            }
+        </script>
+    </body>
+</html>
